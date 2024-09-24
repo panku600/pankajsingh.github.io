@@ -73,17 +73,17 @@
       <div class="row text-center text-lg-left">
         <div class="col-lg-3 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="Data/sample1/images/html5/thumb1.jpg" alt="" onClick="linkClickEvent('html5/sample1');return false;">
+            <img class="img-fluid img-thumbnail" src="Data/sample1/images/html5/thumb1.jpg" alt="" onClick="linkClickEventGame('1');return false;">
           </a>
         </div>
         <div class="col-lg-3 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="Data/sample1/images/html5/thumb2.jpg" alt="" onClick="linkClickEvent('html5/sample2');return false;">
+            <img class="img-fluid img-thumbnail" src="Data/sample1/images/html5/thumb2.jpg" alt="" onClick="linkClickEventGame('2');return false;">
           </a>
         </div>
 		 <div class="col-lg-3 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="Data/sample1/images/html5/thumb3.jpg" alt="" onClick="linkClickEvent('html5/sample3');return false;">
+            <img class="img-fluid img-thumbnail" src="Data/sample1/images/html5/thumb3.jpg" alt="" onClick="linkClickEventGame('3');return false;">
           </a>
         </div>
       </div>
@@ -98,7 +98,11 @@
 	
 	function linkClickEvent(url)
 	{
-		window.open("Data/sample1/contents/" + url + "/index.html", "_blank");
+		window.open("data/sample1/contents/" + url + "/index.html", "_blank");
+	}
+	function linkClickEventGame(url)
+	{
+		window.open("game" + url + ".html", "_blank");
 	}
 
 	function scrollFunction()
